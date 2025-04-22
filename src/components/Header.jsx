@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 import Button from "./Button";
 import styles from "./Header.module.css";
 import { useState } from "react";
-function Header({ islight, setislight }) {
+function Header() {
   const [query, setquery] = useState("");
   const navigate = useNavigate();
   const handleKeyDown = (e) => {
@@ -12,7 +12,7 @@ function Header({ islight, setislight }) {
     }
   };
   return (
-    <header className={`${styles.header} ${islight ? "lighter" : "darker"}`}>
+    <header className={`${styles.header} `}>
       <nav className="maxWidth">
         <Link to="/">
           <img src={logo} alt="pokedex" />
@@ -31,9 +31,6 @@ function Header({ islight, setislight }) {
             <Button>Search</Button>
           </Link>
         </div>
-        <Button onclick={() => setislight(!islight)}>
-          {islight ? "Light" : "Dark"}
-        </Button>
       </nav>
     </header>
   );

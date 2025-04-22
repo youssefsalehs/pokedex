@@ -11,7 +11,6 @@ function Home() {
     return storedoffset ? parseInt(storedoffset, 10) : 0;
   });
   const [loading, setloading] = useState(true);
-  const [islight, setislight] = useState(true);
   useEffect(
     function () {
       async function fetchpokemon() {
@@ -47,12 +46,12 @@ function Home() {
   }
 
   return (
-    <div className={`home ${islight ? "light" : "dark"}`}>
+    <div className={`home`}>
       {loading && <Loadingscreen />}
 
       {!loading && (
         <>
-          <Header islight={islight} setislight={setislight} />
+          <Header />
           <Feed pokemons={pokemons} offset={offset} />
           <Pagination handlenext={handlenext} handleprevious={handleprevious} />
         </>
