@@ -1,0 +1,13 @@
+.error {
+  height: 100vh;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 2rem;
+  color: red;
+}
+.back {
+  padding: 1rem;
+}

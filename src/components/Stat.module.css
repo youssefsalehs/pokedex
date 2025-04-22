@@ -1,0 +1,24 @@
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.parameter {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.value {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 5px;
+  min-width: 100px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.units {
+  margin-left: 0.3rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+}

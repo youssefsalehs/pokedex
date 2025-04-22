@@ -1,0 +1,35 @@
+header {
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+header nav img {
+  width: 100px;
+}
+.srchcontainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.srchcontainer input {
+  padding: 10px;
+
+  flex: 1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 5px;
+}
+@media (max-width: 746px) {
+  header nav button {
+    display: none;
+  }
+}
